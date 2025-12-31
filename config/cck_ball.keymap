@@ -63,8 +63,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+                <&scroll_vertical_encoder>,
+                <&scroll_horizontal_encoder>;
         };
 
         F_layers {
@@ -114,9 +114,10 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,
+                // 编码器1：上下滚动,,
                 <&scroll_horizontal_encoder>;
-  // 编码器2：左右滚动
+
+            // 编码器2：左右滚动
         };
     };
 };
